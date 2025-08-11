@@ -26,7 +26,7 @@ export default function Home() {
       <main className="relative z-20 pt-20">
         {/* Exempel på innehåll */}
         <div className="flex items-center justify-center h-screen">
-          <img src={MyLogo} alt="Skyli Logo" className="w-64 md:w-96" />
+          <img src={MyLogo} alt="Skyli Logo" className="w-5xl" />
         </div>
       </main>
     </div>
