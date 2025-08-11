@@ -1,8 +1,17 @@
+import Navbar from "../components/Navbar";
+
 export default function Shop() {
   return (
     <div>
-      <h1>Welcome to Skyli</h1>
-      <p>Your one-stop shop</p>
+      <Navbar
+        brand="Skyli"
+        links={[
+          { label: "About", path: "/about" },
+          { label: "Music", path: "/music" },
+          { label: "Contact", path: "/contact" },
+          { label: "Shop", path: "/shop" },
+        ]}
+      />
     </div>
   );
 }
