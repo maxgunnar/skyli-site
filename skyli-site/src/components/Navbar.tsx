@@ -6,16 +6,19 @@ interface NavLink {
 }
 
 interface NavbarProps {
-  brand: string;
+  logo: string;
   links: NavLink[];
   className?: string;
 }
 
-export default function Navbar({ brand, links, className = "" }: NavbarProps) {
+export default function Navbar({ logo, links, className = "" }: NavbarProps) {
   return (
     <nav className={`flex items-center justify-between text-white px-6 py-4 ${className}`}>
-      <div className="text-2xl font-bold">
-        <Link to="/">{brand}</Link> {/* <-- Klickbar länk till home */}
+      <div className="w-32">
+        <Link to="/">
+          <img src={logo} alt="homepage" />
+        </Link>{" "}
+        {/* <-- Klickbar länk till home */}
       </div>
       <ul className="flex uppercase space-x-6 md:space-x-12 lg:space-x-32 justify-center">
         {links.map((link) => (

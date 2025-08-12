@@ -1,10 +1,11 @@
 import Navbar from "../components/Navbar";
+import MyLogo from "../assets/logo-font.svg";
 
 export default function Music() {
   return (
     <div>
       <Navbar
-        brand="Skyli"
+        logo={MyLogo}
         links={[
           { label: "About", path: "/about" },
           { label: "Music", path: "/music" },

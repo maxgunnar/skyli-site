@@ -12,7 +12,7 @@ export default function Home() {
 
       {/* Navbar ovanpå videon */}
       <Navbar
-        brand="Skyli"
+        logo={MyLogo}
         links={[
           { label: "About", path: "/about" },
           { label: "Music", path: "/music" },
