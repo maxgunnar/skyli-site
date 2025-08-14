@@ -13,17 +13,17 @@ interface NavbarProps {
 
 export default function Navbar({ logo, links, className = "" }: NavbarProps) {
   return (
-    <nav className={`flex items-center justify-between text-white px-6 py-4 ${className}`}>
+    <nav className={`flex items-center justify-between text-white text-5xl px-6 py-4 ${className}`}>
       <div className="w-32">
         <Link to="/">
           <img src={logo} alt="homepage" />
         </Link>{" "}
         {/* <-- Klickbar länk till home */}
       </div>
-      <ul className="flex uppercase space-x-6 md:space-x-12 lg:space-x-32 justify-center">
+      <ul className="flex lowercase space-x-6 md:space-x-12 lg:space-x-32 justify-center">
         {links.map((link) => (
           <li key={link.path}>
-            <Link to={link.path} className="relative tracking-widest pb-1 border-b-1 border-transparent hover:border-white transition-all duration-300">
+            <Link to={link.path} className="relative tracking-widest pb-3 wavy-hover font-size-[90px]">
               {link.label}
             </Link>
           </li>
