@@ -3,6 +3,7 @@ import MyLogo from "../assets/logo-font.svg";
 import aboutPortrait from "../assets/about-portrait.png";
 import forestPortrait from "../assets/forest-portrait.png";
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
@@ -35,6 +36,7 @@ export default function About() {
         <Card content="" className="bg-[#919A8E] rounded-bl-[50px]" img={MyLogo} />
         <Card content="Drawing from nature’s fragile beauty and the mysterious pull..." className="bg-white rounded-br-[50px] flex items-center px-12" />
       </section>
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import MyLogo from "../assets/logo-font.svg";
+import Footer from "../components/Footer";
 
 export default function Music() {
   return (
@@ -13,6 +14,7 @@ export default function Music() {
           { label: "Shop", path: "/shop" },
         ]}
       />
+      <Footer />
     </div>
   );
 }

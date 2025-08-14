@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import MyLogo from "../assets/logo-font.svg";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
           <img src={MyLogo} alt="Skyli Logo" className="w-5xl" />
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

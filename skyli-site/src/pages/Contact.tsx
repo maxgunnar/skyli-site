@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import MyLogo from "../assets/logo-font.svg";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   return (
@@ -13,6 +14,7 @@ export default function Contact() {
           { label: "Shop", path: "/shop" },
         ]}
       />
+      <Footer />
     </div>
   );
 }
