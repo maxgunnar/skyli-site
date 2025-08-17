@@ -26,3 +26,9 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media screen and (max-width: 640px) {
+  .wavy-hover::after {
+    background-size: 30px 14px;
+  }
+}
