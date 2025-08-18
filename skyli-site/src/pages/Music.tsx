@@ -17,11 +17,10 @@ export default function Music() {
     { imgSource: Close, title: "Close" },
     { imgSource: Satellite, title: "Satellite" },
     { imgSource: Bittersweet, title: "Bittersweet" },
-    { imgSource: Porcelain, title: "Porcelain" }];
-
-  const videos = [
-    { videoId: "tFjfJ95Hdgk?si=JZtAnXvaFeiHTM3G", title: "Satellites - Monitor Sessions" },
+    { imgSource: Porcelain, title: "Porcelain" },
   ];
+
+  const videos = [{ videoId: "tFjfJ95Hdgk?si=JZtAnXvaFeiHTM3G", title: "Satellites - Monitor Sessions" }];
 
   return (
     <div>
@@ -34,20 +33,21 @@ export default function Music() {
           { label: "Shop", path: "/shop" },
         ]}
       />
-      <h1 className="text-white text-5xl p-6">music</h1>
-      <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 max-w-[1500px] mx-auto">
-        {songs.map((song, index) => (
-          <MusicBox key={index} imgSource={song.imgSource} title={song.title} />
-        ))}
-      </section>
-      <h1 className="text-white text-5xl p-6">videos</h1>
-      <section className="grid grid-cols-1 gap-6 p-6 max-w-6xl mx-auto">
-        {videos.map((video, index) => (
-          <VideoBox key={index} videoId={video.videoId} title={video.title} />
-        ))}
-      </section>
+      <main className="mx-auto max-w-[1200px] ">
+        <h1 className="text-white text-5xl rounded-full flex justify-center">music</h1>
+        <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 max-w-[1500px] mx-auto">
+          {songs.map((song, index) => (
+            <MusicBox key={index} imgSource={song.imgSource} title={song.title} />
+          ))}
+        </section>
+        <h1 className="text-white text-5xl justify-center flex">videos</h1>
+        <section className="grid grid-cols-1 gap-6 p-6 max-w-6xl mx-auto">
+          {videos.map((video, index) => (
+            <VideoBox key={index} videoId={video.videoId} title={video.title} />
+          ))}
+        </section>
+      </main>
       <Footer />
     </div>
   );
 }
-
