@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import MyLogo from "../assets/logo-font.svg";
+import MyLogoWhite from "../assets/logo-font-white.svg";
 import Footer from "../components/Footer";
 import MusicBox from "../components/MusicBox";
 import BeforeTheEnd from "../assets/before-the-end.png";
@@ -25,7 +25,7 @@ export default function Music() {
   return (
     <div>
       <Navbar
-        logo={MyLogo}
+        logo={MyLogoWhite}
         links={[
           { label: "About", path: "/about" },
           { label: "Music", path: "/music" },

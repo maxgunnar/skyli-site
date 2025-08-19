@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import MyLogo from "../assets/logo-font.svg";
+import MyLogoWhite from "../assets/logo-font-white.svg";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
 
       {/* Navbar ovanpå videon */}
       <Navbar
-        logo={MyLogo}
+        logo={MyLogoWhite}
         links={[
           { label: "About", path: "/about" },
           { label: "Music", path: "/music" },
@@ -27,7 +27,7 @@ export default function Home() {
       <main className="relative z-20 pt-20">
         {/* Exempel på innehåll */}
         <div className="flex items-center justify-center h-screen">
-          <img src={MyLogo} alt="Skyli Logo" className="w-5xl" />
+          <img src={MyLogoWhite} alt="Skyli Logo" className="w-4xl opacity-25"/>
         </div>
       </main>
       <Footer />

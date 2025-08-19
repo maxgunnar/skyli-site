@@ -1,12 +1,12 @@
 import Navbar from "../components/Navbar";
-import MyLogo from "../assets/logo-font.svg";
+import MyLogoWhite from "../assets/logo-font-white.svg";
 import Footer from "../components/Footer";
 
 export default function Shop() {
   return (
     <div>
       <Navbar
-        logo={MyLogo}
+        logo={MyLogoWhite}
         links={[
           { label: "About", path: "/about" },
           { label: "Music", path: "/music" },
