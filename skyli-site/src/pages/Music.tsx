@@ -38,7 +38,7 @@ export default function Music() {
       />
       <main className="mx-auto max-w-[1200px] ">
         <h1 className="text-white text-5xl rounded-full flex justify-center">music</h1>
-        <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 max-w-[1500px] mx-auto">
+        <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-[1500px] mx-auto">
           {songs.map((song, index) => (
             <MusicBox key={index} imgSource={song.imgSource} title={song.title} />
           ))}
