@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/*Customized breakpoint for small screen*/
+@theme {
+--breakpoint-sm: 48rem;
+}
+
 body {
   background-color: #1b1c1c;
   font-family: "Reenie Beanie", cursive;
@@ -37,5 +42,59 @@ body {
 @media screen and (max-width: 640px) {
   .wavy-hover::after {
     background-size: 30px 14px;
+  }
+}
+/* === Breakpoint Debugger === */
+body::after {
+  content: "BASE"; /* innan sm kickar in */
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* SM ≥ 768px (din custom) */
+@media (min-width: 768px) {
+  body::after {
+    content: "SM";
+    background: rgba(0, 102, 204, 0.7);
+  }
+}
+
+/* MD ≥ 992px */
+@media (min-width: 992px) {
+  body::after {
+    content: "MD";
+    background: rgba(0, 153, 102, 0.7);
+  }
+}
+
+/* LG ≥ 1200px */
+@media (min-width: 1200px) {
+  body::after {
+    content: "LG";
+    background: rgba(204, 153, 0, 0.7);
+  }
+}
+
+/* XL ≥ 1440px */
+@media (min-width: 1440px) {
+  body::after {
+    content: "XL";
+    background: rgba(204, 0, 102, 0.7);
+  }
+}
+
+/* 2XL ≥ 1600px */
+@media (min-width: 1600px) {
+  body::after {
+    content: "2XL";
+    background: rgba(102, 0, 204, 0.7);
   }
 }

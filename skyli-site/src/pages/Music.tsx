@@ -9,6 +9,7 @@ import Satellite from "../assets/satellite.png";
 import Bittersweet from "../assets/bittersweet.png";
 import Porcelain from "../assets/porcelain.png";
 import VideoBox from "../components/VideoBox";
+import MoonLogoWhite from "../assets/moon-logo-white.svg"
 
 export default function Music() {
   const songs = [
@@ -24,14 +25,16 @@ export default function Music() {
 
   return (
     <div>
-      <Navbar
+     <Navbar
         logo={MyLogoWhite}
+        menuIcon={MoonLogoWhite}
         links={[
           { label: "About", path: "/about" },
           { label: "Music", path: "/music" },
           { label: "Contact", path: "/contact" },
           { label: "Shop", path: "/shop" },
         ]}
+        className="relative z-20 bg-transparent"
       />
       <main className="mx-auto max-w-[1200px] ">
         <h1 className="text-white text-5xl rounded-full flex justify-center">music</h1>
