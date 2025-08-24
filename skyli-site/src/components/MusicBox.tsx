@@ -1,4 +1,3 @@
-// MusicBox.tsx
 interface MusicBoxProps {
   imgSource: string;
   title: string;
@@ -18,14 +17,13 @@ export default function MusicBox({ imgSource, title, spotifyUrl, className }: Mu
         rel="noopener noreferrer"
         aria-label={`Listen to ${title} on Spotify`}
         className="
-          relative overflow-hidden
-          uppercase text-white border border-white px-2 py-1 w-20
-          shadow-xl transition-all cursor-pointer
-          hover:scale-110
-          before:absolute before:right-0 before:top-0 before:h-12 before:w-6
-          before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10
-          before:duration-1000 hover:before:-translate-x-40
-        "
+  relative overflow-hidden
+  uppercase text-white border border-white px-2 py-1 w-20 text-center
+  shadow-xl transition-all cursor-pointer hover:scale-110
+  before:absolute before:right-0 before:top-0 before:h-12 before:w-6
+  before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10
+  before:duration-1000 hover:before:-translate-x-40
+"
       >
         Listen
       </a>
